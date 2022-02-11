@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    background-color: #333;
+    color: white;
+    line-height: 1.5;
+}
+
+.jeirani-container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0, 32px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.reset{
+    display: none;
+    background: rgb(80, 80, 80);
+    color: #fff;
+    padding: 8px 26px;
+    font-size: 14px;
+    cursor:pointer;
+    outline:none;
+    border: none;
+    margin-bottom: 16px;
+    transition: 0.3s ease;
+}
+
+.reset:hover{
+    background-color: rgb(136, 40, 40);
+}
+
+
+.header{
+    text-align: center;
+    margin: 16px;
+}
+
+.header h1{
+    margin-bottom: 16px;
+}
+
+.scores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.4rem;
+}
+
+.scores p:first-child{
+    background-color: rgb(136, 40, 40);
+}
+
+.scores p:nth-child(2){
+    background-color: rgb(40, 136, 112);
+}
+
+.scores p:last-child{
+    background-color: rgb(69, 40, 136);
+}
+
+.choises{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.choise{
+    cursor: pointer;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover{
+    color:rgb(136, 40, 40);
+}
+
+@media(max-width: 750px){
+    .choise{
+        font-size: 100px;
+    }
+}
+
+@media(max-width: 450px){
+    .choise{
+        font-size: 75px;
+    }
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content{
+    background: #fff;
+    text-align: center;
+    margin: 10% auto;
+    width: 350px;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalpopup;
+    animation-duration: 1s;
+    color: #333;
+}
+
+@keyframes modalpopup{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.modal-content h1{
+    margin-bottom: 12px;
+}
+
+.modal-content p{
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.win-win{
+    color:rgb(40, 136, 112);
+}
+
+.lose-lose{
+    color:rgb(136, 40, 40)
+}
+
+.draw-draw{
+    color:rgb(194, 149, 25)
+}
+
+.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 10rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
