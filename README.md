@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors ![](https://img.shields.io/badge/password--generator-v1.0.0--stable-blue)
+# Rock-Paper-Scissors ![](https://img.shields.io/badge/rock--paper--scissors-v1.0.0--stable-blue)
 
 Hello, this is my another project. I built this project just for fun : )
 
